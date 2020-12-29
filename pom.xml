@@ -16,6 +16,8 @@
         <module>yikemall-product</module>
         <module>yikemall-ware</module>
         <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>yikemall-common</module>
     </modules>
 
 </project>

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/renren-fast/renren-fast.iml" filepath="$PROJECT_DIR$/renren-fast/renren-fast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/renren-generator/renren-generator.iml" filepath="$PROJECT_DIR$/renren-generator/renren-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/yikemall.iml" filepath="$PROJECT_DIR$/yikemall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yikemall-common/yikemall-common.iml" filepath="$PROJECT_DIR$/yikemall-common/yikemall-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/yikemall-coupon/yikemall-coupon.iml" filepath="$PROJECT_DIR$/yikemall-coupon/yikemall-coupon.iml" />
       <module fileurl="file://$PROJECT_DIR$/yikemall-member/yikemall-member.iml" filepath="$PROJECT_DIR$/yikemall-member/yikemall-member.iml" />
       <module fileurl="file://$PROJECT_DIR$/yikemall-order/yikemall-order.iml" filepath="$PROJECT_DIR$/yikemall-order/yikemall-order.iml" />

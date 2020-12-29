@@ -7,16 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="yikemall-ware" />
+        <module name="renren-generator" />
         <module name="yikemall-product" />
-        <module name="renren-fast" />
-        <module name="yikemall-order" />
         <module name="yikemall-coupon" />
+        <module name="yikemall-order" />
+        <module name="yikemall-common" />
+        <module name="renren-fast" />
         <module name="yikemall-member" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="renren-fast" target="1.8" />
-      <module name="yikemall" target="1.5" />
+      <module name="renren-generator" target="1.8" />
+      <module name="yikemall" target="1.8" />
+      <module name="yikemall-common" target="1.8" />
       <module name="yikemall-coupon" target="1.8" />
       <module name="yikemall-member" target="1.8" />
       <module name="yikemall-order" target="1.8" />
@@ -27,6 +31,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
       <module name="yikemall-coupon" options="-parameters" />
       <module name="yikemall-member" options="-parameters" />
       <module name="yikemall-order" options="-parameters" />
