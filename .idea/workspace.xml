@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f310a57-e50f-4687-8e12-adfeb2d56c68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yikemall-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/ConfigConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/HttpContextUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/IPUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/MapUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/PageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/RedisKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/ShiroUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/SpringContextUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/xss/HTMLFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/xss/SQLFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/xss/XssFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/xss/XssHttpServletRequestWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/exception/RRException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yikemall-product/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/DateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/HttpContextUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/IPUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/RedisKeys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/RedisUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/utils/ShiroUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/xss/SQLFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/xss/SQLFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/xss/XssFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common/xss/XssHttpServletRequestWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-common/yikemall-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-common/yikemall-common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yikemall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-product/src/main/java/com/wangxl/yikemall/product/YikemallProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-product/src/main/java/com/wangxl/yikemall/product/YikemallProductApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-product/src/main/java/com/wangxl/yikemall/product/entity/UndoLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-product/src/main/java/com/wangxl/yikemall/product/entity/UndoLogEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yikemall-product/src/test/java/com/wangxl/yikemall/product/YikemallProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-product/src/test/java/com/wangxl/yikemall/product/YikemallProductApplicationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,28 +54,29 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/yikemall-common/src/main/java/com/wangxl/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yikemall-product/src/main/java/com/wangxl/yikemall/product/controller" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangxl.common.exception" />
       <recent name="com.wangxl.common.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Wangxl\IDEAStudyWorkspace\yikemall\yikemall-product\src\main\java\com\wangxl\yikemall\product\controller" />
       <recent name="D:\Users\Wangxl\IDEAStudyWorkspace\yikemall\yikemall-common\src\main\java\com\wangxl\common" />
       <recent name="D:\Users\Wangxl\IDEAStudyWorkspace\yikemall\yikemall-common\src\main\java\com\wangxl\common\utils" />
       <recent name="D:\Users\Wangxl\IDEAStudyWorkspace\yikemall\yikemall-product\src\main\java\com\wangxl\yikemall\product" />
       <recent name="D:\Users\Wangxl\IDEAStudyWorkspace\yikemall\yikemall-product" />
-      <recent name="D:\Users\Wangxl\IDEAStudyWorkspace\yikemall" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,7 +96,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RenrenApplication (1)">
+  <component name="RunManager" selected="JUnit.YikemallProductApplicationTests.contextLoads">
+    <configuration name="YikemallProductApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yikemall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangxl.yikemall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangxl.yikemall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.wangxl.yikemall.product.YikemallProductApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="yikemall [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -189,6 +201,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.YikemallProductApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.RenrenApplication (1)" />
         <item itemvalue="Spring Boot.RenrenApplication" />
         <item itemvalue="Maven.yikemall [clean]" />
@@ -228,7 +241,8 @@
       <updated>1608884049270</updated>
       <workItem from="1608884052542" duration="1642000" />
       <workItem from="1608885739585" duration="9848000" />
-      <workItem from="1609233424732" duration="6008000" />
+      <workItem from="1609233424732" duration="14285000" />
+      <workItem from="1609312062714" duration="7223000" />
     </task>
     <task id="LOCAL-00001" summary="项目结构初始化">
       <created>1608886330515</created>
