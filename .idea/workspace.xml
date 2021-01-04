@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f310a57-e50f-4687-8e12-adfeb2d56c68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yikemall-order/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-common/yikemall-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-common/yikemall-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-coupon/src/main/java/com/wangxl/yikemall/coupon/YikemallCouponApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-coupon/src/main/java/com/wangxl/yikemall/coupon/YikemallCouponApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-coupon/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-coupon/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-member/src/main/java/com/wangxl/yikemall/member/YikemallMemberApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-member/src/main/java/com/wangxl/yikemall/member/YikemallMemberApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-member/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-member/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-order/src/main/java/com/wangxl/yikemall/order/YikemallOrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-order/src/main/java/com/wangxl/yikemall/order/YikemallOrderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-product/src/main/java/com/wangxl/yikemall/product/YikemallProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-product/src/main/java/com/wangxl/yikemall/product/YikemallProductApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-product/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-ware/src/main/java/com/wangxl/yikemall/ware/YikemallWareApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-ware/src/main/java/com/wangxl/yikemall/ware/YikemallWareApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yikemall-ware/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yikemall-ware/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,27 +197,7 @@
       <serviceView>
         <option name="contentProportion" value="0.21049784" />
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@682609f1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@682609f1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6af2dcd9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@682609f1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5c803147" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@682609f1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e6c54858" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -247,7 +216,7 @@
       <workItem from="1608884052542" duration="1642000" />
       <workItem from="1608885739585" duration="9848000" />
       <workItem from="1609233424732" duration="14285000" />
-      <workItem from="1609312062714" duration="22304000" />
+      <workItem from="1609312062714" duration="24219000" />
     </task>
     <task id="LOCAL-00001" summary="项目结构初始化">
       <created>1608886330515</created>
