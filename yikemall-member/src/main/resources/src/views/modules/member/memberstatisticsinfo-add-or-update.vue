@@ -130,25 +130,25 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmemberstatisticsinfo/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/memberstatisticsinfo/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.memberId = data.umsMemberStatisticsInfo.memberId
-                this.dataForm.consumeAmount = data.umsMemberStatisticsInfo.consumeAmount
-                this.dataForm.couponAmount = data.umsMemberStatisticsInfo.couponAmount
-                this.dataForm.orderCount = data.umsMemberStatisticsInfo.orderCount
-                this.dataForm.couponCount = data.umsMemberStatisticsInfo.couponCount
-                this.dataForm.commentCount = data.umsMemberStatisticsInfo.commentCount
-                this.dataForm.returnOrderCount = data.umsMemberStatisticsInfo.returnOrderCount
-                this.dataForm.loginCount = data.umsMemberStatisticsInfo.loginCount
-                this.dataForm.attendCount = data.umsMemberStatisticsInfo.attendCount
-                this.dataForm.fansCount = data.umsMemberStatisticsInfo.fansCount
-                this.dataForm.collectProductCount = data.umsMemberStatisticsInfo.collectProductCount
-                this.dataForm.collectSubjectCount = data.umsMemberStatisticsInfo.collectSubjectCount
-                this.dataForm.collectCommentCount = data.umsMemberStatisticsInfo.collectCommentCount
-                this.dataForm.inviteFriendCount = data.umsMemberStatisticsInfo.inviteFriendCount
+                this.dataForm.memberId = data.memberStatisticsInfo.memberId
+                this.dataForm.consumeAmount = data.memberStatisticsInfo.consumeAmount
+                this.dataForm.couponAmount = data.memberStatisticsInfo.couponAmount
+                this.dataForm.orderCount = data.memberStatisticsInfo.orderCount
+                this.dataForm.couponCount = data.memberStatisticsInfo.couponCount
+                this.dataForm.commentCount = data.memberStatisticsInfo.commentCount
+                this.dataForm.returnOrderCount = data.memberStatisticsInfo.returnOrderCount
+                this.dataForm.loginCount = data.memberStatisticsInfo.loginCount
+                this.dataForm.attendCount = data.memberStatisticsInfo.attendCount
+                this.dataForm.fansCount = data.memberStatisticsInfo.fansCount
+                this.dataForm.collectProductCount = data.memberStatisticsInfo.collectProductCount
+                this.dataForm.collectSubjectCount = data.memberStatisticsInfo.collectSubjectCount
+                this.dataForm.collectCommentCount = data.memberStatisticsInfo.collectCommentCount
+                this.dataForm.inviteFriendCount = data.memberStatisticsInfo.inviteFriendCount
               }
             })
           }
@@ -159,7 +159,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmemberstatisticsinfo/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/memberstatisticsinfo/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

@@ -13,7 +13,7 @@ import com.wangxl.yikemall.member.entity.MemberEntity;
 import com.wangxl.yikemall.member.service.MemberService;
 
 
-@Service("umsMemberService")
+@Service("memberService")
 public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> implements MemberService {
 
     @Override

@@ -13,7 +13,7 @@ import com.wangxl.yikemall.order.entity.PaymentInfoEntity;
 import com.wangxl.yikemall.order.service.PaymentInfoService;
 
 
-@Service("omsPaymentInfoService")
+@Service("paymentInfoService")
 public class PaymentInfoServiceImpl extends ServiceImpl<PaymentInfoDao, PaymentInfoEntity> implements PaymentInfoService {
 
     @Override

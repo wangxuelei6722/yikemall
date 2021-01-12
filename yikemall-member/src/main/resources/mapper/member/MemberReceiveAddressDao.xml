@@ -4,7 +4,7 @@
 <mapper namespace="com.wangxl.yikemall.member.dao.MemberReceiveAddressDao">
 
 	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.wangxl.yikemall.member.entity.MemberReceiveAddressEntity" id="umsMemberReceiveAddressMap">
+    <resultMap type="com.wangxl.yikemall.member.entity.MemberReceiveAddressEntity" id="memberReceiveAddressMap">
         <result property="id" column="id"/>
         <result property="memberId" column="member_id"/>
         <result property="name" column="name"/>

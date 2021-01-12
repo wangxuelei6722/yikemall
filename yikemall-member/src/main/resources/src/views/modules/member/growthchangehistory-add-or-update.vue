@@ -67,16 +67,16 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsgrowthchangehistory/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/growthchangehistory/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.memberId = data.umsGrowthChangeHistory.memberId
-                this.dataForm.createTime = data.umsGrowthChangeHistory.createTime
-                this.dataForm.changeCount = data.umsGrowthChangeHistory.changeCount
-                this.dataForm.note = data.umsGrowthChangeHistory.note
-                this.dataForm.sourceType = data.umsGrowthChangeHistory.sourceType
+                this.dataForm.memberId = data.growthChangeHistory.memberId
+                this.dataForm.createTime = data.growthChangeHistory.createTime
+                this.dataForm.changeCount = data.growthChangeHistory.changeCount
+                this.dataForm.note = data.growthChangeHistory.note
+                this.dataForm.sourceType = data.growthChangeHistory.sourceType
               }
             })
           }
@@ -87,7 +87,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsgrowthchangehistory/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/growthchangehistory/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

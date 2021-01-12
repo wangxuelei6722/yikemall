@@ -67,16 +67,16 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsintegrationchangehistory/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/integrationchangehistory/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.memberId = data.umsIntegrationChangeHistory.memberId
-                this.dataForm.createTime = data.umsIntegrationChangeHistory.createTime
-                this.dataForm.changeCount = data.umsIntegrationChangeHistory.changeCount
-                this.dataForm.note = data.umsIntegrationChangeHistory.note
-                this.dataForm.sourceTyoe = data.umsIntegrationChangeHistory.sourceTyoe
+                this.dataForm.memberId = data.integrationChangeHistory.memberId
+                this.dataForm.createTime = data.integrationChangeHistory.createTime
+                this.dataForm.changeCount = data.integrationChangeHistory.changeCount
+                this.dataForm.note = data.integrationChangeHistory.note
+                this.dataForm.sourceTyoe = data.integrationChangeHistory.sourceTyoe
               }
             })
           }
@@ -87,7 +87,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsintegrationchangehistory/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/integrationchangehistory/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

@@ -165,30 +165,30 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omsorderitem/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/orderitem/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.orderId = data.omsOrderItem.orderId
-                this.dataForm.orderSn = data.omsOrderItem.orderSn
-                this.dataForm.spuId = data.omsOrderItem.spuId
-                this.dataForm.spuName = data.omsOrderItem.spuName
-                this.dataForm.spuPic = data.omsOrderItem.spuPic
-                this.dataForm.spuBrand = data.omsOrderItem.spuBrand
-                this.dataForm.categoryId = data.omsOrderItem.categoryId
-                this.dataForm.skuId = data.omsOrderItem.skuId
-                this.dataForm.skuName = data.omsOrderItem.skuName
-                this.dataForm.skuPic = data.omsOrderItem.skuPic
-                this.dataForm.skuPrice = data.omsOrderItem.skuPrice
-                this.dataForm.skuQuantity = data.omsOrderItem.skuQuantity
-                this.dataForm.skuAttrsVals = data.omsOrderItem.skuAttrsVals
-                this.dataForm.promotionAmount = data.omsOrderItem.promotionAmount
-                this.dataForm.couponAmount = data.omsOrderItem.couponAmount
-                this.dataForm.integrationAmount = data.omsOrderItem.integrationAmount
-                this.dataForm.realAmount = data.omsOrderItem.realAmount
-                this.dataForm.giftIntegration = data.omsOrderItem.giftIntegration
-                this.dataForm.giftGrowth = data.omsOrderItem.giftGrowth
+                this.dataForm.orderId = data.orderItem.orderId
+                this.dataForm.orderSn = data.orderItem.orderSn
+                this.dataForm.spuId = data.orderItem.spuId
+                this.dataForm.spuName = data.orderItem.spuName
+                this.dataForm.spuPic = data.orderItem.spuPic
+                this.dataForm.spuBrand = data.orderItem.spuBrand
+                this.dataForm.categoryId = data.orderItem.categoryId
+                this.dataForm.skuId = data.orderItem.skuId
+                this.dataForm.skuName = data.orderItem.skuName
+                this.dataForm.skuPic = data.orderItem.skuPic
+                this.dataForm.skuPrice = data.orderItem.skuPrice
+                this.dataForm.skuQuantity = data.orderItem.skuQuantity
+                this.dataForm.skuAttrsVals = data.orderItem.skuAttrsVals
+                this.dataForm.promotionAmount = data.orderItem.promotionAmount
+                this.dataForm.couponAmount = data.orderItem.couponAmount
+                this.dataForm.integrationAmount = data.orderItem.integrationAmount
+                this.dataForm.realAmount = data.orderItem.realAmount
+                this.dataForm.giftIntegration = data.orderItem.giftIntegration
+                this.dataForm.giftGrowth = data.orderItem.giftGrowth
               }
             })
           }
@@ -199,7 +199,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omsorderitem/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/orderitem/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

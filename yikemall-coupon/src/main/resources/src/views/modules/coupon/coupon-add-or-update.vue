@@ -165,30 +165,30 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smscoupon/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/coupon/coupon/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.couponType = data.smsCoupon.couponType
-                this.dataForm.couponImg = data.smsCoupon.couponImg
-                this.dataForm.couponName = data.smsCoupon.couponName
-                this.dataForm.num = data.smsCoupon.num
-                this.dataForm.amount = data.smsCoupon.amount
-                this.dataForm.perLimit = data.smsCoupon.perLimit
-                this.dataForm.minPoint = data.smsCoupon.minPoint
-                this.dataForm.startTime = data.smsCoupon.startTime
-                this.dataForm.endTime = data.smsCoupon.endTime
-                this.dataForm.useType = data.smsCoupon.useType
-                this.dataForm.note = data.smsCoupon.note
-                this.dataForm.publishCount = data.smsCoupon.publishCount
-                this.dataForm.useCount = data.smsCoupon.useCount
-                this.dataForm.receiveCount = data.smsCoupon.receiveCount
-                this.dataForm.enableStartTime = data.smsCoupon.enableStartTime
-                this.dataForm.enableEndTime = data.smsCoupon.enableEndTime
-                this.dataForm.code = data.smsCoupon.code
-                this.dataForm.memberLevel = data.smsCoupon.memberLevel
-                this.dataForm.publish = data.smsCoupon.publish
+                this.dataForm.couponType = data.coupon.couponType
+                this.dataForm.couponImg = data.coupon.couponImg
+                this.dataForm.couponName = data.coupon.couponName
+                this.dataForm.num = data.coupon.num
+                this.dataForm.amount = data.coupon.amount
+                this.dataForm.perLimit = data.coupon.perLimit
+                this.dataForm.minPoint = data.coupon.minPoint
+                this.dataForm.startTime = data.coupon.startTime
+                this.dataForm.endTime = data.coupon.endTime
+                this.dataForm.useType = data.coupon.useType
+                this.dataForm.note = data.coupon.note
+                this.dataForm.publishCount = data.coupon.publishCount
+                this.dataForm.useCount = data.coupon.useCount
+                this.dataForm.receiveCount = data.coupon.receiveCount
+                this.dataForm.enableStartTime = data.coupon.enableStartTime
+                this.dataForm.enableEndTime = data.coupon.enableEndTime
+                this.dataForm.code = data.coupon.code
+                this.dataForm.memberLevel = data.coupon.memberLevel
+                this.dataForm.publish = data.coupon.publish
               }
             })
           }
@@ -199,7 +199,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smscoupon/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/coupon/coupon/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

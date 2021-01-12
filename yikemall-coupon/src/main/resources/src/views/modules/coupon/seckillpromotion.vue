@@ -6,8 +6,8 @@
       </el-form-item>
       <el-form-item>
         <el-button @click="getDataList()">查询</el-button>
-        <el-button v-if="isAuth('coupon:smsseckillpromotion:save')" type="primary" @click="addOrUpdateHandle()">新增</el-button>
-        <el-button v-if="isAuth('coupon:smsseckillpromotion:delete')" type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除</el-button>
+        <el-button v-if="isAuth('coupon:seckillpromotion:save')" type="primary" @click="addOrUpdateHandle()">新增</el-button>
+        <el-button v-if="isAuth('coupon:seckillpromotion:delete')" type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除</el-button>
       </el-form-item>
     </el-form>
     <el-table
@@ -91,7 +91,7 @@
 </template>
 
 <script>
-  import AddOrUpdate from './smsseckillpromotion-add-or-update'
+  import AddOrUpdate from './seckillpromotion-add-or-update'
   export default {
     data () {
       return {
@@ -118,7 +118,7 @@
       getDataList () {
         this.dataListLoading = true
         this.$http({
-          url: this.$http.adornUrl('/coupon/smsseckillpromotion/list'),
+          url: this.$http.adornUrl('/coupon/seckillpromotion/list'),
           method: 'get',
           params: this.$http.adornParams({
             'page': this.pageIndex,
@@ -169,7 +169,7 @@
           type: 'warning'
         }).then(() => {
           this.$http({
-            url: this.$http.adornUrl('/coupon/smsseckillpromotion/delete'),
+            url: this.$http.adornUrl('/coupon/seckillpromotion/delete'),
             method: 'post',
             data: this.$http.adornData(ids, false)
           }).then(({data}) => {

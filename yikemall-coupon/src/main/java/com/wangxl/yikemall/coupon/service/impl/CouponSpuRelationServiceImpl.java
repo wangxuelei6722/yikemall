@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.CouponSpuRelationEntity;
 import com.wangxl.yikemall.coupon.service.CouponSpuRelationService;
 
 
-@Service("smsCouponSpuRelationService")
+@Service("couponSpuRelationService")
 public class CouponSpuRelationServiceImpl extends ServiceImpl<CouponSpuRelationDao, CouponSpuRelationEntity> implements CouponSpuRelationService {
 
     @Override

@@ -25,7 +25,7 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-31 11:19:40
  */
 @RestController
-@RequestMapping("member/umsmembercollectsubject")
+@RequestMapping("member/membercollectsubject")
 public class MemberCollectSubjectController {
     @Autowired
     private MemberCollectSubjectService memberCollectSubjectService;

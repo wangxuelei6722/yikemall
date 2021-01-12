@@ -4,7 +4,7 @@
 <mapper namespace="com.wangxl.yikemall.ware.dao.PurchaseDao">
 
 	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.wangxl.yikemall.ware.entity.PurchaseEntity" id="wmsPurchaseMap">
+    <resultMap type="com.wangxl.yikemall.ware.entity.PurchaseEntity" id="purchaseMap">
         <result property="id" column="id"/>
         <result property="assigneeId" column="assignee_id"/>
         <result property="assigneeName" column="assignee_name"/>

@@ -95,20 +95,20 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smscouponhistory/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/coupon/couponhistory/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.couponId = data.smsCouponHistory.couponId
-                this.dataForm.memberId = data.smsCouponHistory.memberId
-                this.dataForm.memberNickName = data.smsCouponHistory.memberNickName
-                this.dataForm.getType = data.smsCouponHistory.getType
-                this.dataForm.createTime = data.smsCouponHistory.createTime
-                this.dataForm.useType = data.smsCouponHistory.useType
-                this.dataForm.useTime = data.smsCouponHistory.useTime
-                this.dataForm.orderId = data.smsCouponHistory.orderId
-                this.dataForm.orderSn = data.smsCouponHistory.orderSn
+                this.dataForm.couponId = data.couponHistory.couponId
+                this.dataForm.memberId = data.couponHistory.memberId
+                this.dataForm.memberNickName = data.couponHistory.memberNickName
+                this.dataForm.getType = data.couponHistory.getType
+                this.dataForm.createTime = data.couponHistory.createTime
+                this.dataForm.useType = data.couponHistory.useType
+                this.dataForm.useTime = data.couponHistory.useTime
+                this.dataForm.orderId = data.couponHistory.orderId
+                this.dataForm.orderSn = data.couponHistory.orderSn
               }
             })
           }
@@ -119,7 +119,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smscouponhistory/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/coupon/couponhistory/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

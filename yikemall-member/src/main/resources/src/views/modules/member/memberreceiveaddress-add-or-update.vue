@@ -102,21 +102,21 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmemberreceiveaddress/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/memberreceiveaddress/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.memberId = data.umsMemberReceiveAddress.memberId
-                this.dataForm.name = data.umsMemberReceiveAddress.name
-                this.dataForm.phone = data.umsMemberReceiveAddress.phone
-                this.dataForm.postCode = data.umsMemberReceiveAddress.postCode
-                this.dataForm.province = data.umsMemberReceiveAddress.province
-                this.dataForm.city = data.umsMemberReceiveAddress.city
-                this.dataForm.region = data.umsMemberReceiveAddress.region
-                this.dataForm.detailAddress = data.umsMemberReceiveAddress.detailAddress
-                this.dataForm.areacode = data.umsMemberReceiveAddress.areacode
-                this.dataForm.defaultStatus = data.umsMemberReceiveAddress.defaultStatus
+                this.dataForm.memberId = data.memberReceiveAddress.memberId
+                this.dataForm.name = data.memberReceiveAddress.name
+                this.dataForm.phone = data.memberReceiveAddress.phone
+                this.dataForm.postCode = data.memberReceiveAddress.postCode
+                this.dataForm.province = data.memberReceiveAddress.province
+                this.dataForm.city = data.memberReceiveAddress.city
+                this.dataForm.region = data.memberReceiveAddress.region
+                this.dataForm.detailAddress = data.memberReceiveAddress.detailAddress
+                this.dataForm.areacode = data.memberReceiveAddress.areacode
+                this.dataForm.defaultStatus = data.memberReceiveAddress.defaultStatus
               }
             })
           }
@@ -127,7 +127,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmemberreceiveaddress/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/memberreceiveaddress/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

@@ -25,7 +25,7 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-31 11:19:40
  */
 @RestController
-@RequestMapping("member/umsgrowthchangehistory")
+@RequestMapping("member/growthchangehistory")
 public class GrowthChangeHistoryController {
     @Autowired
     private GrowthChangeHistoryService growthChangeHistoryService;

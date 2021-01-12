@@ -4,7 +4,7 @@
 <mapper namespace="com.wangxl.yikemall.coupon.dao.CouponDao">
 
 	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.wangxl.yikemall.coupon.entity.CouponEntity" id="smsCouponMap">
+    <resultMap type="com.wangxl.yikemall.coupon.entity.CouponEntity" id="couponMap">
         <result property="id" column="id"/>
         <result property="couponType" column="coupon_type"/>
         <result property="couponImg" column="coupon_img"/>

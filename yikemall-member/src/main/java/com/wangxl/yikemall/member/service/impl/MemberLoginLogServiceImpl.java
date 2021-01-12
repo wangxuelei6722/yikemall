@@ -13,7 +13,7 @@ import com.wangxl.yikemall.member.entity.MemberLoginLogEntity;
 import com.wangxl.yikemall.member.service.MemberLoginLogService;
 
 
-@Service("umsMemberLoginLogService")
+@Service("memberLoginLogService")
 public class MemberLoginLogServiceImpl extends ServiceImpl<MemberLoginLogDao, MemberLoginLogEntity> implements MemberLoginLogService {
 
     @Override

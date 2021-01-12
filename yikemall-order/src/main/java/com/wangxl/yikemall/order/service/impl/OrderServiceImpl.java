@@ -13,7 +13,7 @@ import com.wangxl.yikemall.order.entity.OrderEntity;
 import com.wangxl.yikemall.order.service.OrderService;
 
 
-@Service("omsOrderService")
+@Service("orderService")
 public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> implements OrderService {
 
     @Override

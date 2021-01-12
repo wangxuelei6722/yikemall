@@ -102,21 +102,21 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omspaymentinfo/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/paymentinfo/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.orderSn = data.omsPaymentInfo.orderSn
-                this.dataForm.orderId = data.omsPaymentInfo.orderId
-                this.dataForm.alipayTradeNo = data.omsPaymentInfo.alipayTradeNo
-                this.dataForm.totalAmount = data.omsPaymentInfo.totalAmount
-                this.dataForm.subject = data.omsPaymentInfo.subject
-                this.dataForm.paymentStatus = data.omsPaymentInfo.paymentStatus
-                this.dataForm.createTime = data.omsPaymentInfo.createTime
-                this.dataForm.confirmTime = data.omsPaymentInfo.confirmTime
-                this.dataForm.callbackContent = data.omsPaymentInfo.callbackContent
-                this.dataForm.callbackTime = data.omsPaymentInfo.callbackTime
+                this.dataForm.orderSn = data.paymentInfo.orderSn
+                this.dataForm.orderId = data.paymentInfo.orderId
+                this.dataForm.alipayTradeNo = data.paymentInfo.alipayTradeNo
+                this.dataForm.totalAmount = data.paymentInfo.totalAmount
+                this.dataForm.subject = data.paymentInfo.subject
+                this.dataForm.paymentStatus = data.paymentInfo.paymentStatus
+                this.dataForm.createTime = data.paymentInfo.createTime
+                this.dataForm.confirmTime = data.paymentInfo.confirmTime
+                this.dataForm.callbackContent = data.paymentInfo.callbackContent
+                this.dataForm.callbackTime = data.paymentInfo.callbackTime
               }
             })
           }
@@ -127,7 +127,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omspaymentinfo/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/paymentinfo/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

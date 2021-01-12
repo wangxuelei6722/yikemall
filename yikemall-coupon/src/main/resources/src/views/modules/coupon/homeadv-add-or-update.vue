@@ -109,22 +109,22 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smshomeadv/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/coupon/homeadv/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.name = data.smsHomeAdv.name
-                this.dataForm.pic = data.smsHomeAdv.pic
-                this.dataForm.startTime = data.smsHomeAdv.startTime
-                this.dataForm.endTime = data.smsHomeAdv.endTime
-                this.dataForm.status = data.smsHomeAdv.status
-                this.dataForm.clickCount = data.smsHomeAdv.clickCount
-                this.dataForm.url = data.smsHomeAdv.url
-                this.dataForm.note = data.smsHomeAdv.note
-                this.dataForm.sort = data.smsHomeAdv.sort
-                this.dataForm.publisherId = data.smsHomeAdv.publisherId
-                this.dataForm.authId = data.smsHomeAdv.authId
+                this.dataForm.name = data.homeAdv.name
+                this.dataForm.pic = data.homeAdv.pic
+                this.dataForm.startTime = data.homeAdv.startTime
+                this.dataForm.endTime = data.homeAdv.endTime
+                this.dataForm.status = data.homeAdv.status
+                this.dataForm.clickCount = data.homeAdv.clickCount
+                this.dataForm.url = data.homeAdv.url
+                this.dataForm.note = data.homeAdv.note
+                this.dataForm.sort = data.homeAdv.sort
+                this.dataForm.publisherId = data.homeAdv.publisherId
+                this.dataForm.authId = data.homeAdv.authId
               }
             })
           }
@@ -135,7 +135,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smshomeadv/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/coupon/homeadv/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

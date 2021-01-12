@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.SeckillSkuRelationEntity;
 import com.wangxl.yikemall.coupon.service.SeckillSkuRelationService;
 
 
-@Service("smsSeckillSkuRelationService")
+@Service("seckillSkuRelationService")
 public class SeckillSkuRelationServiceImpl extends ServiceImpl<SeckillSkuRelationDao, SeckillSkuRelationEntity> implements SeckillSkuRelationService {
 
     @Override

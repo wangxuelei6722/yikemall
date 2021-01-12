@@ -4,7 +4,7 @@
 <mapper namespace="com.wangxl.yikemall.order.dao.MqMessageDao">
 
 	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.wangxl.yikemall.order.entity.MqMessageEntity" id="mqMessageMap">
+    <resultMap type="com.wangxl.yikemall.order.entity.MqMessageEntity" id="messageMap">
         <result property="messageId" column="message_id"/>
         <result property="content" column="content"/>
         <result property="toExchange" column="to_exchange"/>

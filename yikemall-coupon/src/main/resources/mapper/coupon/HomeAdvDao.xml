@@ -4,7 +4,7 @@
 <mapper namespace="com.wangxl.yikemall.coupon.dao.HomeAdvDao">
 
 	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.wangxl.yikemall.coupon.entity.HomeAdvEntity" id="smsHomeAdvMap">
+    <resultMap type="com.wangxl.yikemall.coupon.entity.HomeAdvEntity" id="homeAdvMap">
         <result property="id" column="id"/>
         <result property="name" column="name"/>
         <result property="pic" column="pic"/>

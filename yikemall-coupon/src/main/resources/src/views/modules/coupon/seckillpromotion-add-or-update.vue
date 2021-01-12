@@ -74,17 +74,17 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smsseckillpromotion/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/coupon/seckillpromotion/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.title = data.smsSeckillPromotion.title
-                this.dataForm.startTime = data.smsSeckillPromotion.startTime
-                this.dataForm.endTime = data.smsSeckillPromotion.endTime
-                this.dataForm.status = data.smsSeckillPromotion.status
-                this.dataForm.createTime = data.smsSeckillPromotion.createTime
-                this.dataForm.userId = data.smsSeckillPromotion.userId
+                this.dataForm.title = data.seckillPromotion.title
+                this.dataForm.startTime = data.seckillPromotion.startTime
+                this.dataForm.endTime = data.seckillPromotion.endTime
+                this.dataForm.status = data.seckillPromotion.status
+                this.dataForm.createTime = data.seckillPromotion.createTime
+                this.dataForm.userId = data.seckillPromotion.userId
               }
             })
           }
@@ -95,7 +95,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smsseckillpromotion/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/coupon/seckillpromotion/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

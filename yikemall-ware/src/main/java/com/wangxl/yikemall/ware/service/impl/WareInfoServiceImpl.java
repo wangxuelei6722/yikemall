@@ -13,7 +13,7 @@ import com.wangxl.yikemall.ware.entity.WareInfoEntity;
 import com.wangxl.yikemall.ware.service.WareInfoService;
 
 
-@Service("wmsWareInfoService")
+@Service("wareInfoService")
 public class WareInfoServiceImpl extends ServiceImpl<WareInfoDao, WareInfoEntity> implements WareInfoService {
 
     @Override

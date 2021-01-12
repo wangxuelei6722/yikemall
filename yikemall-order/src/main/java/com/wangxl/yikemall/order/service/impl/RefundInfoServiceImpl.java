@@ -13,7 +13,7 @@ import com.wangxl.yikemall.order.entity.RefundInfoEntity;
 import com.wangxl.yikemall.order.service.RefundInfoService;
 
 
-@Service("omsRefundInfoService")
+@Service("refundInfoService")
 public class RefundInfoServiceImpl extends ServiceImpl<RefundInfoDao, RefundInfoEntity> implements RefundInfoService {
 
     @Override

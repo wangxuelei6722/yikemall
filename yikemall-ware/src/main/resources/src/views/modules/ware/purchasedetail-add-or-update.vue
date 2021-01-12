@@ -74,17 +74,17 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/ware/wmspurchasedetail/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/ware/purchasedetail/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.purchaseId = data.wmsPurchaseDetail.purchaseId
-                this.dataForm.skuId = data.wmsPurchaseDetail.skuId
-                this.dataForm.skuNum = data.wmsPurchaseDetail.skuNum
-                this.dataForm.skuPrice = data.wmsPurchaseDetail.skuPrice
-                this.dataForm.wareId = data.wmsPurchaseDetail.wareId
-                this.dataForm.status = data.wmsPurchaseDetail.status
+                this.dataForm.purchaseId = data.purchaseDetail.purchaseId
+                this.dataForm.skuId = data.purchaseDetail.skuId
+                this.dataForm.skuNum = data.purchaseDetail.skuNum
+                this.dataForm.skuPrice = data.purchaseDetail.skuPrice
+                this.dataForm.wareId = data.purchaseDetail.wareId
+                this.dataForm.status = data.purchaseDetail.status
               }
             })
           }
@@ -95,7 +95,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/ware/wmspurchasedetail/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/ware/purchasedetail/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

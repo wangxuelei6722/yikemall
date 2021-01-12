@@ -25,7 +25,7 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-30 18:53:56
  */
 @RestController
-@RequestMapping("coupon/smsseckillskunotice")
+@RequestMapping("coupon/seckillskunotice")
 public class SeckillSkuNoticeController {
     @Autowired
     private SeckillSkuNoticeService seckillSkuNoticeService;

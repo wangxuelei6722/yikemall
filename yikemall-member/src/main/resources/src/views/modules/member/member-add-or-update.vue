@@ -172,31 +172,31 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmember/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/member/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.levelId = data.umsMember.levelId
-                this.dataForm.username = data.umsMember.username
-                this.dataForm.password = data.umsMember.password
-                this.dataForm.nickname = data.umsMember.nickname
-                this.dataForm.mobile = data.umsMember.mobile
-                this.dataForm.email = data.umsMember.email
-                this.dataForm.header = data.umsMember.header
-                this.dataForm.gender = data.umsMember.gender
-                this.dataForm.birth = data.umsMember.birth
-                this.dataForm.city = data.umsMember.city
-                this.dataForm.job = data.umsMember.job
-                this.dataForm.sign = data.umsMember.sign
-                this.dataForm.sourceType = data.umsMember.sourceType
-                this.dataForm.integration = data.umsMember.integration
-                this.dataForm.growth = data.umsMember.growth
-                this.dataForm.status = data.umsMember.status
-                this.dataForm.createTime = data.umsMember.createTime
-                this.dataForm.socialUid = data.umsMember.socialUid
-                this.dataForm.accessToken = data.umsMember.accessToken
-                this.dataForm.expiresIn = data.umsMember.expiresIn
+                this.dataForm.levelId = data.member.levelId
+                this.dataForm.username = data.member.username
+                this.dataForm.password = data.member.password
+                this.dataForm.nickname = data.member.nickname
+                this.dataForm.mobile = data.member.mobile
+                this.dataForm.email = data.member.email
+                this.dataForm.header = data.member.header
+                this.dataForm.gender = data.member.gender
+                this.dataForm.birth = data.member.birth
+                this.dataForm.city = data.member.city
+                this.dataForm.job = data.member.job
+                this.dataForm.sign = data.member.sign
+                this.dataForm.sourceType = data.member.sourceType
+                this.dataForm.integration = data.member.integration
+                this.dataForm.growth = data.member.growth
+                this.dataForm.status = data.member.status
+                this.dataForm.createTime = data.member.createTime
+                this.dataForm.socialUid = data.member.socialUid
+                this.dataForm.accessToken = data.member.accessToken
+                this.dataForm.expiresIn = data.member.expiresIn
               }
             })
           }
@@ -207,7 +207,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmember/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/member/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

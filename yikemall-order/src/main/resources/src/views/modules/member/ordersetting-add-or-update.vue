@@ -74,17 +74,17 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omsordersetting/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/ordersetting/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.flashOrderOvertime = data.omsOrderSetting.flashOrderOvertime
-                this.dataForm.normalOrderOvertime = data.omsOrderSetting.normalOrderOvertime
-                this.dataForm.confirmOvertime = data.omsOrderSetting.confirmOvertime
-                this.dataForm.finishOvertime = data.omsOrderSetting.finishOvertime
-                this.dataForm.commentOvertime = data.omsOrderSetting.commentOvertime
-                this.dataForm.memberLevel = data.omsOrderSetting.memberLevel
+                this.dataForm.flashOrderOvertime = data.orderSetting.flashOrderOvertime
+                this.dataForm.normalOrderOvertime = data.orderSetting.normalOrderOvertime
+                this.dataForm.confirmOvertime = data.orderSetting.confirmOvertime
+                this.dataForm.finishOvertime = data.orderSetting.finishOvertime
+                this.dataForm.commentOvertime = data.orderSetting.commentOvertime
+                this.dataForm.memberLevel = data.orderSetting.memberLevel
               }
             })
           }
@@ -95,7 +95,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omsordersetting/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/ordersetting/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

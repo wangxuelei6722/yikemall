@@ -13,7 +13,7 @@ import com.wangxl.yikemall.member.entity.MemberCollectSpuEntity;
 import com.wangxl.yikemall.member.service.MemberCollectSpuService;
 
 
-@Service("umsMemberCollectSpuService")
+@Service("memberCollectSpuService")
 public class MemberCollectSpuServiceImpl extends ServiceImpl<MemberCollectSpuDao, MemberCollectSpuEntity> implements MemberCollectSpuService {
 
     @Override

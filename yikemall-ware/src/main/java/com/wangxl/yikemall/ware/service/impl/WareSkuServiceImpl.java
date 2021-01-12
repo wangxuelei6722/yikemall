@@ -13,7 +13,7 @@ import com.wangxl.yikemall.ware.entity.WareSkuEntity;
 import com.wangxl.yikemall.ware.service.WareSkuService;
 
 
-@Service("wmsWareSkuService")
+@Service("wareSkuService")
 public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> implements WareSkuService {
 
     @Override

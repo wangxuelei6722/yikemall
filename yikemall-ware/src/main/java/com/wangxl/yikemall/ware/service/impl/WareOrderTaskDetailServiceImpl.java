@@ -13,7 +13,7 @@ import com.wangxl.yikemall.ware.entity.WareOrderTaskDetailEntity;
 import com.wangxl.yikemall.ware.service.WareOrderTaskDetailService;
 
 
-@Service("wmsWareOrderTaskDetailService")
+@Service("wareOrderTaskDetailService")
 public class WareOrderTaskDetailServiceImpl extends ServiceImpl<WareOrderTaskDetailDao, WareOrderTaskDetailEntity> implements WareOrderTaskDetailService {
 
     @Override

@@ -319,52 +319,52 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omsorder/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/order/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.memberId = data.omsOrder.memberId
-                this.dataForm.orderSn = data.omsOrder.orderSn
-                this.dataForm.couponId = data.omsOrder.couponId
-                this.dataForm.createTime = data.omsOrder.createTime
-                this.dataForm.memberUsername = data.omsOrder.memberUsername
-                this.dataForm.totalAmount = data.omsOrder.totalAmount
-                this.dataForm.payAmount = data.omsOrder.payAmount
-                this.dataForm.freightAmount = data.omsOrder.freightAmount
-                this.dataForm.promotionAmount = data.omsOrder.promotionAmount
-                this.dataForm.integrationAmount = data.omsOrder.integrationAmount
-                this.dataForm.couponAmount = data.omsOrder.couponAmount
-                this.dataForm.discountAmount = data.omsOrder.discountAmount
-                this.dataForm.payType = data.omsOrder.payType
-                this.dataForm.sourceType = data.omsOrder.sourceType
-                this.dataForm.status = data.omsOrder.status
-                this.dataForm.deliveryCompany = data.omsOrder.deliveryCompany
-                this.dataForm.deliverySn = data.omsOrder.deliverySn
-                this.dataForm.autoConfirmDay = data.omsOrder.autoConfirmDay
-                this.dataForm.integration = data.omsOrder.integration
-                this.dataForm.growth = data.omsOrder.growth
-                this.dataForm.billType = data.omsOrder.billType
-                this.dataForm.billHeader = data.omsOrder.billHeader
-                this.dataForm.billContent = data.omsOrder.billContent
-                this.dataForm.billReceiverPhone = data.omsOrder.billReceiverPhone
-                this.dataForm.billReceiverEmail = data.omsOrder.billReceiverEmail
-                this.dataForm.receiverName = data.omsOrder.receiverName
-                this.dataForm.receiverPhone = data.omsOrder.receiverPhone
-                this.dataForm.receiverPostCode = data.omsOrder.receiverPostCode
-                this.dataForm.receiverProvince = data.omsOrder.receiverProvince
-                this.dataForm.receiverCity = data.omsOrder.receiverCity
-                this.dataForm.receiverRegion = data.omsOrder.receiverRegion
-                this.dataForm.receiverDetailAddress = data.omsOrder.receiverDetailAddress
-                this.dataForm.note = data.omsOrder.note
-                this.dataForm.confirmStatus = data.omsOrder.confirmStatus
-                this.dataForm.deleteStatus = data.omsOrder.deleteStatus
-                this.dataForm.useIntegration = data.omsOrder.useIntegration
-                this.dataForm.paymentTime = data.omsOrder.paymentTime
-                this.dataForm.deliveryTime = data.omsOrder.deliveryTime
-                this.dataForm.receiveTime = data.omsOrder.receiveTime
-                this.dataForm.commentTime = data.omsOrder.commentTime
-                this.dataForm.modifyTime = data.omsOrder.modifyTime
+                this.dataForm.memberId = data.order.memberId
+                this.dataForm.orderSn = data.order.orderSn
+                this.dataForm.couponId = data.order.couponId
+                this.dataForm.createTime = data.order.createTime
+                this.dataForm.memberUsername = data.order.memberUsername
+                this.dataForm.totalAmount = data.order.totalAmount
+                this.dataForm.payAmount = data.order.payAmount
+                this.dataForm.freightAmount = data.order.freightAmount
+                this.dataForm.promotionAmount = data.order.promotionAmount
+                this.dataForm.integrationAmount = data.order.integrationAmount
+                this.dataForm.couponAmount = data.order.couponAmount
+                this.dataForm.discountAmount = data.order.discountAmount
+                this.dataForm.payType = data.order.payType
+                this.dataForm.sourceType = data.order.sourceType
+                this.dataForm.status = data.order.status
+                this.dataForm.deliveryCompany = data.order.deliveryCompany
+                this.dataForm.deliverySn = data.order.deliverySn
+                this.dataForm.autoConfirmDay = data.order.autoConfirmDay
+                this.dataForm.integration = data.order.integration
+                this.dataForm.growth = data.order.growth
+                this.dataForm.billType = data.order.billType
+                this.dataForm.billHeader = data.order.billHeader
+                this.dataForm.billContent = data.order.billContent
+                this.dataForm.billReceiverPhone = data.order.billReceiverPhone
+                this.dataForm.billReceiverEmail = data.order.billReceiverEmail
+                this.dataForm.receiverName = data.order.receiverName
+                this.dataForm.receiverPhone = data.order.receiverPhone
+                this.dataForm.receiverPostCode = data.order.receiverPostCode
+                this.dataForm.receiverProvince = data.order.receiverProvince
+                this.dataForm.receiverCity = data.order.receiverCity
+                this.dataForm.receiverRegion = data.order.receiverRegion
+                this.dataForm.receiverDetailAddress = data.order.receiverDetailAddress
+                this.dataForm.note = data.order.note
+                this.dataForm.confirmStatus = data.order.confirmStatus
+                this.dataForm.deleteStatus = data.order.deleteStatus
+                this.dataForm.useIntegration = data.order.useIntegration
+                this.dataForm.paymentTime = data.order.paymentTime
+                this.dataForm.deliveryTime = data.order.deliveryTime
+                this.dataForm.receiveTime = data.order.receiveTime
+                this.dataForm.commentTime = data.order.commentTime
+                this.dataForm.modifyTime = data.order.modifyTime
               }
             })
           }
@@ -375,7 +375,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omsorder/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/order/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

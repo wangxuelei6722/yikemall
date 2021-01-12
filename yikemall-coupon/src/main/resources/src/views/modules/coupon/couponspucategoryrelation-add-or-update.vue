@@ -53,14 +53,14 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smscouponspucategoryrelation/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/coupon/couponspucategoryrelation/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.couponId = data.smsCouponSpuCategoryRelation.couponId
-                this.dataForm.categoryId = data.smsCouponSpuCategoryRelation.categoryId
-                this.dataForm.categoryName = data.smsCouponSpuCategoryRelation.categoryName
+                this.dataForm.couponId = data.couponSpuCategoryRelation.couponId
+                this.dataForm.categoryId = data.couponSpuCategoryRelation.categoryId
+                this.dataForm.categoryName = data.couponSpuCategoryRelation.categoryName
               }
             })
           }
@@ -71,7 +71,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smscouponspucategoryrelation/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/coupon/couponspucategoryrelation/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

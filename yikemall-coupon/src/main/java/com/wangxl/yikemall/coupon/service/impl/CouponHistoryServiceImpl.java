@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.CouponHistoryEntity;
 import com.wangxl.yikemall.coupon.service.CouponHistoryService;
 
 
-@Service("smsCouponHistoryService")
+@Service("couponHistoryService")
 public class CouponHistoryServiceImpl extends ServiceImpl<CouponHistoryDao, CouponHistoryEntity> implements CouponHistoryService {
 
     @Override

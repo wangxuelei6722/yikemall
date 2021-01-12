@@ -6,8 +6,8 @@
       </el-form-item>
       <el-form-item>
         <el-button @click="getDataList()">查询</el-button>
-        <el-button v-if="isAuth('ware:wmswareinfo:save')" type="primary" @click="addOrUpdateHandle()">新增</el-button>
-        <el-button v-if="isAuth('ware:wmswareinfo:delete')" type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除</el-button>
+        <el-button v-if="isAuth('ware:wareinfo:save')" type="primary" @click="addOrUpdateHandle()">新增</el-button>
+        <el-button v-if="isAuth('ware:wareinfo:delete')" type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除</el-button>
       </el-form-item>
     </el-form>
     <el-table
@@ -73,7 +73,7 @@
 </template>
 
 <script>
-  import AddOrUpdate from './wmswareinfo-add-or-update'
+  import AddOrUpdate from './wareinfo-add-or-update'
   export default {
     data () {
       return {
@@ -100,7 +100,7 @@
       getDataList () {
         this.dataListLoading = true
         this.$http({
-          url: this.$http.adornUrl('/ware/wmswareinfo/list'),
+          url: this.$http.adornUrl('/ware/wareinfo/list'),
           method: 'get',
           params: this.$http.adornParams({
             'page': this.pageIndex,
@@ -151,7 +151,7 @@
           type: 'warning'
         }).then(() => {
           this.$http({
-            url: this.$http.adornUrl('/ware/wmswareinfo/delete'),
+            url: this.$http.adornUrl('/ware/wareinfo/delete'),
             method: 'post',
             data: this.$http.adornData(ids, false)
           }).then(({data}) => {

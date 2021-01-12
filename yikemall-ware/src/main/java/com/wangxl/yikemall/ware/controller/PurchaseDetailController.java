@@ -25,7 +25,7 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-31 11:35:14
  */
 @RestController
-@RequestMapping("ware/wmspurchasedetail")
+@RequestMapping("ware/purchasedetail")
 public class PurchaseDetailController {
     @Autowired
     private PurchaseDetailService purchaseDetailService;

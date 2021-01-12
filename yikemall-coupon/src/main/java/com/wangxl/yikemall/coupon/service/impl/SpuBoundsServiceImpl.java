@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.SpuBoundsEntity;
 import com.wangxl.yikemall.coupon.service.SpuBoundsService;
 
 
-@Service("smsSpuBoundsService")
+@Service("spuBoundsService")
 public class SpuBoundsServiceImpl extends ServiceImpl<SpuBoundsDao, SpuBoundsEntity> implements SpuBoundsService {
 
     @Override

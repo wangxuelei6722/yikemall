@@ -13,7 +13,7 @@ import com.wangxl.yikemall.member.entity.MemberStatisticsInfoEntity;
 import com.wangxl.yikemall.member.service.MemberStatisticsInfoService;
 
 
-@Service("umsMemberStatisticsInfoService")
+@Service("memberStatisticsInfoService")
 public class MemberStatisticsInfoServiceImpl extends ServiceImpl<MemberStatisticsInfoDao, MemberStatisticsInfoEntity> implements MemberStatisticsInfoService {
 
     @Override

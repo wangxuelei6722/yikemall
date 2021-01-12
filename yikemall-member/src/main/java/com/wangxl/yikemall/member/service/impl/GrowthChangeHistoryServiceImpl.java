@@ -13,7 +13,7 @@ import com.wangxl.yikemall.member.entity.GrowthChangeHistoryEntity;
 import com.wangxl.yikemall.member.service.GrowthChangeHistoryService;
 
 
-@Service("umsGrowthChangeHistoryService")
+@Service("growthChangeHistoryService")
 public class GrowthChangeHistoryServiceImpl extends ServiceImpl<GrowthChangeHistoryDao, GrowthChangeHistoryEntity> implements GrowthChangeHistoryService {
 
     @Override

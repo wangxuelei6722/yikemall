@@ -60,15 +60,15 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smshomesubjectspu/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/coupon/homesubjectspu/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.name = data.smsHomeSubjectSpu.name
-                this.dataForm.subjectId = data.smsHomeSubjectSpu.subjectId
-                this.dataForm.spuId = data.smsHomeSubjectSpu.spuId
-                this.dataForm.sort = data.smsHomeSubjectSpu.sort
+                this.dataForm.name = data.homeSubjectSpu.name
+                this.dataForm.subjectId = data.homeSubjectSpu.subjectId
+                this.dataForm.spuId = data.homeSubjectSpu.spuId
+                this.dataForm.sort = data.homeSubjectSpu.sort
               }
             })
           }
@@ -79,7 +79,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smshomesubjectspu/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/coupon/homesubjectspu/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

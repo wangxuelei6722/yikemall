@@ -13,7 +13,7 @@ import com.wangxl.yikemall.member.entity.MemberCollectSubjectEntity;
 import com.wangxl.yikemall.member.service.MemberCollectSubjectService;
 
 
-@Service("umsMemberCollectSubjectService")
+@Service("memberCollectSubjectService")
 public class MemberCollectSubjectServiceImpl extends ServiceImpl<MemberCollectSubjectDao, MemberCollectSubjectEntity> implements MemberCollectSubjectService {
 
     @Override

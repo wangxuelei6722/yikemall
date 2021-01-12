@@ -60,15 +60,15 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmembercollectsubject/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/membercollectsubject/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.subjectId = data.umsMemberCollectSubject.subjectId
-                this.dataForm.subjectName = data.umsMemberCollectSubject.subjectName
-                this.dataForm.subjectImg = data.umsMemberCollectSubject.subjectImg
-                this.dataForm.subjectUrll = data.umsMemberCollectSubject.subjectUrll
+                this.dataForm.subjectId = data.memberCollectSubject.subjectId
+                this.dataForm.subjectName = data.memberCollectSubject.subjectName
+                this.dataForm.subjectImg = data.memberCollectSubject.subjectImg
+                this.dataForm.subjectUrll = data.memberCollectSubject.subjectUrll
               }
             })
           }
@@ -79,7 +79,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmembercollectsubject/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/membercollectsubject/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

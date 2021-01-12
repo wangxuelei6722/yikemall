@@ -25,7 +25,7 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-31 11:19:40
  */
 @RestController
-@RequestMapping("member/umsmemberlevel")
+@RequestMapping("member/memberlevel")
 public class MemberLevelController {
     @Autowired
     private MemberLevelService memberLevelService;

@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.MemberPriceEntity;
 import com.wangxl.yikemall.coupon.service.MemberPriceService;
 
 
-@Service("smsMemberPriceService")
+@Service("memberPriceService")
 public class MemberPriceServiceImpl extends ServiceImpl<MemberPriceDao, MemberPriceEntity> implements MemberPriceService {
 
     @Override

@@ -6,8 +6,8 @@
       </el-form-item>
       <el-form-item>
         <el-button @click="getDataList()">查询</el-button>
-        <el-button v-if="isAuth('coupon:smscoupon:save')" type="primary" @click="addOrUpdateHandle()">新增</el-button>
-        <el-button v-if="isAuth('coupon:smscoupon:delete')" type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除</el-button>
+        <el-button v-if="isAuth('coupon:coupon:save')" type="primary" @click="addOrUpdateHandle()">新增</el-button>
+        <el-button v-if="isAuth('coupon:coupon:delete')" type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除</el-button>
       </el-form-item>
     </el-form>
     <el-table
@@ -169,7 +169,7 @@
 </template>
 
 <script>
-  import AddOrUpdate from './smscoupon-add-or-update'
+  import AddOrUpdate from './coupon-add-or-update'
   export default {
     data () {
       return {
@@ -196,7 +196,7 @@
       getDataList () {
         this.dataListLoading = true
         this.$http({
-          url: this.$http.adornUrl('/coupon/smscoupon/list'),
+          url: this.$http.adornUrl('/coupon/coupon/list'),
           method: 'get',
           params: this.$http.adornParams({
             'page': this.pageIndex,
@@ -247,7 +247,7 @@
           type: 'warning'
         }).then(() => {
           this.$http({
-            url: this.$http.adornUrl('/coupon/smscoupon/delete'),
+            url: this.$http.adornUrl('/coupon/coupon/delete'),
             method: 'post',
             data: this.$http.adornData(ids, false)
           }).then(({data}) => {

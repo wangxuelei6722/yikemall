@@ -67,16 +67,16 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmemberloginlog/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/memberloginlog/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.memberId = data.umsMemberLoginLog.memberId
-                this.dataForm.createTime = data.umsMemberLoginLog.createTime
-                this.dataForm.ip = data.umsMemberLoginLog.ip
-                this.dataForm.city = data.umsMemberLoginLog.city
-                this.dataForm.loginType = data.umsMemberLoginLog.loginType
+                this.dataForm.memberId = data.memberLoginLog.memberId
+                this.dataForm.createTime = data.memberLoginLog.createTime
+                this.dataForm.ip = data.memberLoginLog.ip
+                this.dataForm.city = data.memberLoginLog.city
+                this.dataForm.loginType = data.memberLoginLog.loginType
               }
             })
           }
@@ -87,7 +87,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmemberloginlog/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/memberloginlog/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

@@ -6,8 +6,8 @@
       </el-form-item>
       <el-form-item>
         <el-button @click="getDataList()">查询</el-button>
-        <el-button v-if="isAuth('member:umsmemberlevel:save')" type="primary" @click="addOrUpdateHandle()">新增</el-button>
-        <el-button v-if="isAuth('member:umsmemberlevel:delete')" type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除</el-button>
+        <el-button v-if="isAuth('member:memberlevel:save')" type="primary" @click="addOrUpdateHandle()">新增</el-button>
+        <el-button v-if="isAuth('member:memberlevel:delete')" type="danger" @click="deleteHandle()" :disabled="dataListSelections.length <= 0">批量删除</el-button>
       </el-form-item>
     </el-form>
     <el-table
@@ -109,7 +109,7 @@
 </template>
 
 <script>
-  import AddOrUpdate from './umsmemberlevel-add-or-update'
+  import AddOrUpdate from './memberlevel-add-or-update'
   export default {
     data () {
       return {
@@ -136,7 +136,7 @@
       getDataList () {
         this.dataListLoading = true
         this.$http({
-          url: this.$http.adornUrl('/member/umsmemberlevel/list'),
+          url: this.$http.adornUrl('/member/memberlevel/list'),
           method: 'get',
           params: this.$http.adornParams({
             'page': this.pageIndex,
@@ -187,7 +187,7 @@
           type: 'warning'
         }).then(() => {
           this.$http({
-            url: this.$http.adornUrl('/member/umsmemberlevel/delete'),
+            url: this.$http.adornUrl('/member/memberlevel/delete'),
             method: 'post',
             data: this.$http.adornData(ids, false)
           }).then(({data}) => {

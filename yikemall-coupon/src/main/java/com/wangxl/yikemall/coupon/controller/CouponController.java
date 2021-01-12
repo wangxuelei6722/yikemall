@@ -25,10 +25,17 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-30 18:53:56
  */
 @RestController
-@RequestMapping("coupon/smscoupon")
+@RequestMapping("coupon/coupon")
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+    @RequestMapping("/member/list")
+    public R memberCoupons(){
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("满100减10");
+        return R.ok().put("coupons",Arrays.asList(couponEntity));
+    }
 
     /**
      * 列表

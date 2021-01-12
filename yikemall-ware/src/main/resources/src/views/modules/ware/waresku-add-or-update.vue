@@ -67,16 +67,16 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/ware/wmswaresku/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/ware/waresku/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.skuId = data.wmsWareSku.skuId
-                this.dataForm.wareId = data.wmsWareSku.wareId
-                this.dataForm.stock = data.wmsWareSku.stock
-                this.dataForm.skuName = data.wmsWareSku.skuName
-                this.dataForm.stockLocked = data.wmsWareSku.stockLocked
+                this.dataForm.skuId = data.wareSku.skuId
+                this.dataForm.wareId = data.wareSku.wareId
+                this.dataForm.stock = data.wareSku.stock
+                this.dataForm.skuName = data.wareSku.skuName
+                this.dataForm.stockLocked = data.wareSku.stockLocked
               }
             })
           }
@@ -87,7 +87,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/ware/wmswaresku/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/ware/waresku/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

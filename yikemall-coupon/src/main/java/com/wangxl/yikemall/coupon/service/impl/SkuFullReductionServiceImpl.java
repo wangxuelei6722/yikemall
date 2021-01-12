@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.SkuFullReductionEntity;
 import com.wangxl.yikemall.coupon.service.SkuFullReductionService;
 
 
-@Service("smsSkuFullReductionService")
+@Service("skuFullReductionService")
 public class SkuFullReductionServiceImpl extends ServiceImpl<SkuFullReductionDao, SkuFullReductionEntity> implements SkuFullReductionService {
 
     @Override

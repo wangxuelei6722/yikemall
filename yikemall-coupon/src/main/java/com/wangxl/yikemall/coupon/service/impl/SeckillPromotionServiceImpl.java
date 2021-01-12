@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.SeckillPromotionEntity;
 import com.wangxl.yikemall.coupon.service.SeckillPromotionService;
 
 
-@Service("smsSeckillPromotionService")
+@Service("seckillPromotionService")
 public class SeckillPromotionServiceImpl extends ServiceImpl<SeckillPromotionDao, SeckillPromotionEntity> implements SeckillPromotionService {
 
     @Override

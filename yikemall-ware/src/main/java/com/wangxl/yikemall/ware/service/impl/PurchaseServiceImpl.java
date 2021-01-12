@@ -13,7 +13,7 @@ import com.wangxl.yikemall.ware.entity.PurchaseEntity;
 import com.wangxl.yikemall.ware.service.PurchaseService;
 
 
-@Service("wmsPurchaseService")
+@Service("purchaseService")
 public class PurchaseServiceImpl extends ServiceImpl<PurchaseDao, PurchaseEntity> implements PurchaseService {
 
     @Override

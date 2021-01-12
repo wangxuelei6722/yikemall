@@ -25,7 +25,7 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-30 18:53:56
  */
 @RestController
-@RequestMapping("coupon/smshomesubjectspu")
+@RequestMapping("coupon/homesubjectspu")
 public class HomeSubjectSpuController {
     @Autowired
     private HomeSubjectSpuService homeSubjectSpuService;

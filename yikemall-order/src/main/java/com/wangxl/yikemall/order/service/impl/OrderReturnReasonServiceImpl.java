@@ -13,7 +13,7 @@ import com.wangxl.yikemall.order.entity.OrderReturnReasonEntity;
 import com.wangxl.yikemall.order.service.OrderReturnReasonService;
 
 
-@Service("omsOrderReturnReasonService")
+@Service("orderReturnReasonService")
 public class OrderReturnReasonServiceImpl extends ServiceImpl<OrderReturnReasonDao, OrderReturnReasonEntity> implements OrderReturnReasonService {
 
     @Override

@@ -67,16 +67,16 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmembercollectspu/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/membercollectspu/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.memberId = data.umsMemberCollectSpu.memberId
-                this.dataForm.spuId = data.umsMemberCollectSpu.spuId
-                this.dataForm.spuName = data.umsMemberCollectSpu.spuName
-                this.dataForm.spuImg = data.umsMemberCollectSpu.spuImg
-                this.dataForm.createTime = data.umsMemberCollectSpu.createTime
+                this.dataForm.memberId = data.memberCollectSpu.memberId
+                this.dataForm.spuId = data.memberCollectSpu.spuId
+                this.dataForm.spuName = data.memberCollectSpu.spuName
+                this.dataForm.spuImg = data.memberCollectSpu.spuImg
+                this.dataForm.createTime = data.memberCollectSpu.createTime
               }
             })
           }
@@ -87,7 +87,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmembercollectspu/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/membercollectspu/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

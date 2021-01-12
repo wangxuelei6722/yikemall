@@ -25,7 +25,7 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-31 11:19:40
  */
 @RestController
-@RequestMapping("member/umsmemberloginlog")
+@RequestMapping("member/memberloginlog")
 public class MemberLoginLogController {
     @Autowired
     private MemberLoginLogService memberLoginLogService;

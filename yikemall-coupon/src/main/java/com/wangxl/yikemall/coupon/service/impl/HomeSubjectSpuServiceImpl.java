@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.HomeSubjectSpuEntity;
 import com.wangxl.yikemall.coupon.service.HomeSubjectSpuService;
 
 
-@Service("smsHomeSubjectSpuService")
+@Service("homeSubjectSpuService")
 public class HomeSubjectSpuServiceImpl extends ServiceImpl<HomeSubjectSpuDao, HomeSubjectSpuEntity> implements HomeSubjectSpuService {
 
     @Override

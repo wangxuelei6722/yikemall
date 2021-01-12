@@ -60,15 +60,15 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smsspubounds/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/coupon/spubounds/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.spuId = data.smsSpuBounds.spuId
-                this.dataForm.growBounds = data.smsSpuBounds.growBounds
-                this.dataForm.buyBounds = data.smsSpuBounds.buyBounds
-                this.dataForm.work = data.smsSpuBounds.work
+                this.dataForm.spuId = data.spuBounds.spuId
+                this.dataForm.growBounds = data.spuBounds.growBounds
+                this.dataForm.buyBounds = data.spuBounds.buyBounds
+                this.dataForm.work = data.spuBounds.work
               }
             })
           }
@@ -79,7 +79,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/coupon/smsspubounds/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/coupon/spubounds/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

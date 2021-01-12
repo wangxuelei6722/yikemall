@@ -13,7 +13,7 @@ import com.wangxl.yikemall.order.entity.OrderOperateHistoryEntity;
 import com.wangxl.yikemall.order.service.OrderOperateHistoryService;
 
 
-@Service("omsOrderOperateHistoryService")
+@Service("orderOperateHistoryService")
 public class OrderOperateHistoryServiceImpl extends ServiceImpl<OrderOperateHistoryDao, OrderOperateHistoryEntity> implements OrderOperateHistoryService {
 
     @Override

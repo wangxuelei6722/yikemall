@@ -95,20 +95,20 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmemberlevel/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/memberlevel/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.name = data.umsMemberLevel.name
-                this.dataForm.growthPoint = data.umsMemberLevel.growthPoint
-                this.dataForm.defaultStatus = data.umsMemberLevel.defaultStatus
-                this.dataForm.freeFreightPoint = data.umsMemberLevel.freeFreightPoint
-                this.dataForm.commentGrowthPoint = data.umsMemberLevel.commentGrowthPoint
-                this.dataForm.priviledgeFreeFreight = data.umsMemberLevel.priviledgeFreeFreight
-                this.dataForm.priviledgeMemberPrice = data.umsMemberLevel.priviledgeMemberPrice
-                this.dataForm.priviledgeBirthday = data.umsMemberLevel.priviledgeBirthday
-                this.dataForm.note = data.umsMemberLevel.note
+                this.dataForm.name = data.memberLevel.name
+                this.dataForm.growthPoint = data.memberLevel.growthPoint
+                this.dataForm.defaultStatus = data.memberLevel.defaultStatus
+                this.dataForm.freeFreightPoint = data.memberLevel.freeFreightPoint
+                this.dataForm.commentGrowthPoint = data.memberLevel.commentGrowthPoint
+                this.dataForm.priviledgeFreeFreight = data.memberLevel.priviledgeFreeFreight
+                this.dataForm.priviledgeMemberPrice = data.memberLevel.priviledgeMemberPrice
+                this.dataForm.priviledgeBirthday = data.memberLevel.priviledgeBirthday
+                this.dataForm.note = data.memberLevel.note
               }
             })
           }
@@ -119,7 +119,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/umsmemberlevel/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/memberlevel/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,

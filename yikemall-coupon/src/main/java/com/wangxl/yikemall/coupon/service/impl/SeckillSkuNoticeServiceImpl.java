@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.SeckillSkuNoticeEntity;
 import com.wangxl.yikemall.coupon.service.SeckillSkuNoticeService;
 
 
-@Service("smsSeckillSkuNoticeService")
+@Service("seckillSkuNoticeService")
 public class SeckillSkuNoticeServiceImpl extends ServiceImpl<SeckillSkuNoticeDao, SeckillSkuNoticeEntity> implements SeckillSkuNoticeService {
 
     @Override

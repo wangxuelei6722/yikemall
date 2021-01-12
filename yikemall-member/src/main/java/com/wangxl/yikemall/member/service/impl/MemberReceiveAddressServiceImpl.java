@@ -13,7 +13,7 @@ import com.wangxl.yikemall.member.entity.MemberReceiveAddressEntity;
 import com.wangxl.yikemall.member.service.MemberReceiveAddressService;
 
 
-@Service("umsMemberReceiveAddressService")
+@Service("memberReceiveAddressService")
 public class MemberReceiveAddressServiceImpl extends ServiceImpl<MemberReceiveAddressDao, MemberReceiveAddressEntity> implements MemberReceiveAddressService {
 
     @Override

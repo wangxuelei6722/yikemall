@@ -25,7 +25,7 @@ import com.wangxl.common.utils.R;
  * @date 2020-12-31 11:30:49
  */
 @RestController
-@RequestMapping("order/omsorderreturnapply")
+@RequestMapping("order/orderreturnapply")
 public class OrderReturnApplyController {
     @Autowired
     private OrderReturnApplyService orderReturnApplyService;

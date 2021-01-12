@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.SkuLadderEntity;
 import com.wangxl.yikemall.coupon.service.SkuLadderService;
 
 
-@Service("smsSkuLadderService")
+@Service("skuLadderService")
 public class SkuLadderServiceImpl extends ServiceImpl<SkuLadderDao, SkuLadderEntity> implements SkuLadderService {
 
     @Override

@@ -13,7 +13,7 @@ import com.wangxl.yikemall.coupon.entity.SeckillSessionEntity;
 import com.wangxl.yikemall.coupon.service.SeckillSessionService;
 
 
-@Service("smsSeckillSessionService")
+@Service("seckillSessionService")
 public class SeckillSessionServiceImpl extends ServiceImpl<SeckillSessionDao, SeckillSessionEntity> implements SeckillSessionService {
 
     @Override

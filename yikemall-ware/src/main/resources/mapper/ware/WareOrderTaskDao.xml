@@ -4,7 +4,7 @@
 <mapper namespace="com.wangxl.yikemall.ware.dao.WareOrderTaskDao">
 
 	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.wangxl.yikemall.ware.entity.WareOrderTaskEntity" id="wmsWareOrderTaskMap">
+    <resultMap type="com.wangxl.yikemall.ware.entity.WareOrderTaskEntity" id="wareOrderTaskMap">
         <result property="id" column="id"/>
         <result property="orderId" column="order_id"/>
         <result property="orderSn" column="order_sn"/>

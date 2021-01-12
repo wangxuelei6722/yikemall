@@ -13,7 +13,7 @@ import com.wangxl.yikemall.member.entity.IntegrationChangeHistoryEntity;
 import com.wangxl.yikemall.member.service.IntegrationChangeHistoryService;
 
 
-@Service("umsIntegrationChangeHistoryService")
+@Service("integrationChangeHistoryService")
 public class IntegrationChangeHistoryServiceImpl extends ServiceImpl<IntegrationChangeHistoryDao, IntegrationChangeHistoryEntity> implements IntegrationChangeHistoryService {
 
     @Override

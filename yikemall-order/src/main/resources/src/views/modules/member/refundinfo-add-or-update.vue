@@ -74,17 +74,17 @@
           this.$refs['dataForm'].resetFields()
           if (this.dataForm.id) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omsrefundinfo/info/${this.dataForm.id}`),
+              url: this.$http.adornUrl(`/member/refundinfo/info/${this.dataForm.id}`),
               method: 'get',
               params: this.$http.adornParams()
             }).then(({data}) => {
               if (data && data.code === 0) {
-                this.dataForm.orderReturnId = data.omsRefundInfo.orderReturnId
-                this.dataForm.refund = data.omsRefundInfo.refund
-                this.dataForm.refundSn = data.omsRefundInfo.refundSn
-                this.dataForm.refundStatus = data.omsRefundInfo.refundStatus
-                this.dataForm.refundChannel = data.omsRefundInfo.refundChannel
-                this.dataForm.refundContent = data.omsRefundInfo.refundContent
+                this.dataForm.orderReturnId = data.refundInfo.orderReturnId
+                this.dataForm.refund = data.refundInfo.refund
+                this.dataForm.refundSn = data.refundInfo.refundSn
+                this.dataForm.refundStatus = data.refundInfo.refundStatus
+                this.dataForm.refundChannel = data.refundInfo.refundChannel
+                this.dataForm.refundContent = data.refundInfo.refundContent
               }
             })
           }
@@ -95,7 +95,7 @@
         this.$refs['dataForm'].validate((valid) => {
           if (valid) {
             this.$http({
-              url: this.$http.adornUrl(`/member/omsrefundinfo/${!this.dataForm.id ? 'save' : 'update'}`),
+              url: this.$http.adornUrl(`/member/refundinfo/${!this.dataForm.id ? 'save' : 'update'}`),
               method: 'post',
               data: this.$http.adornData({
                 'id': this.dataForm.id || undefined,
